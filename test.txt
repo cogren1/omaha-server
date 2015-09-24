@@ -2,3 +2,4 @@
 17:22  up 28 days, 47 mins, 4 users, load averages: 1,35 1,76 1,86
 18:48  up 28 days,  2:13, 4 users, load averages: 3,34 3,35 2,82
 11:00  up 28 days, 18:25, 4 users, load averages: 2,29 2,08 1,87
+11:27  up 28 days, 18:52, 4 users, load averages: 4,24 3,13 2,28
