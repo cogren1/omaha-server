@@ -20,6 +20,8 @@ PROJECT_DIR = BASE_DIR
 
 IS_PRIVATE = True if os.getenv('OMAHA_SERVER_PRIVATE', '').title() == 'True' else False
 
+SITE_ID = 1
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -28,10 +30,10 @@ TEMPLATES = [
         ],
         'APP_DIRS': True,
         'OPTIONS': {
-            'context_processors': TCP + (
+            'context_processors': TCP + [
                 'django.core.context_processors.request',
                 'absolute.context_processors.absolute',
-            ),
+            ],
         },
     },
 ]
@@ -82,6 +84,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     'storages',
     'django_extensions',
